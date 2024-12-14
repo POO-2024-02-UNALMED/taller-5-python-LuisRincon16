@@ -9,3 +9,4 @@ class Mamifero(Animal):
         super().__init__(nom, edad, hab, gen)
         self._pelaje = pelaje
         self._patas = patas
+        Mamifero._listado.append(self)

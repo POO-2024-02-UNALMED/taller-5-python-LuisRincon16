@@ -9,3 +9,4 @@ class Reptil(Animal):
         super().__init__(nom, edad, hab, gen)
         self._colorEscamas = cEscamas
         self._largoCola = lCola
+        Reptil._listado.append(self)

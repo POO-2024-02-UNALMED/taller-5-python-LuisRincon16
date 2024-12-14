@@ -9,3 +9,4 @@ class Pez(Animal):
         super().__init__(nom, edad, hab, gen)
         self._colorEscamas = cEscamas
         self._cantidadAletas = cAletas
+        Pez._listado.append(self)
