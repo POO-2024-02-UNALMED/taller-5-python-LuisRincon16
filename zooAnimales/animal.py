@@ -18,4 +18,7 @@ class Animal:
 
     def totalPorTipo(self):
         return (f"Mamiferos: {len(Mamifero.getListado())}\n" f"Aves: {len(Ave.getListado())}\n" f"Reptiles: {len(Reptil.getListado())}\n" f"Peces: {len(Pez.getListado())}\n" f"Anfibios: {len(Anfibio.getListado())}")
+    
+    def toString(self):
+        if 
         
