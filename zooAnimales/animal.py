@@ -17,5 +17,5 @@ class Animal:
         Animal._totalAnimales += 1
 
     def totalPorTipo(self):
-        return f"Mamiferos: {len(Mamifero._listado)}\n Aves: {len(Ave._listado)}\n Reptiles: {len(Reptil._listado)}\n Peces: {len(Pez._listado)} \n Anfibios: {len(Anfibio._listado)}"
+        return (f"Mamiferos: {len(Mamifero.getListado())}\n" f"Aves: {len(Ave.getListado())}\n" f"Reptiles: {len(Reptil.getListado())}\n" f"Peces: {len(Pez.getListado())}\n" f"Anfibios: {len(Anfibio.getListado())}")
         

@@ -9,3 +9,7 @@ class Ave(Animal):
         super().__init__(nom, edad, hab, gen)
         self._colorPlumas = cPlumas
         Ave._listado.append(self)
+
+    @classmethod
+    def getListado(cls):
+        return cls._listado

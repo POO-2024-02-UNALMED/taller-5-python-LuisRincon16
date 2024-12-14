@@ -10,3 +10,7 @@ class Reptil(Animal):
         self._colorEscamas = cEscamas
         self._largoCola = lCola
         Reptil._listado.append(self)
+
+    @classmethod
+    def getListado(cls):
+        return cls._listado

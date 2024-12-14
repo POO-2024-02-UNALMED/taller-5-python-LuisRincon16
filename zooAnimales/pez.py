@@ -10,3 +10,7 @@ class Pez(Animal):
         self._colorEscamas = cEscamas
         self._cantidadAletas = cAletas
         Pez._listado.append(self)
+
+    @classmethod
+    def getListado(cls):
+        return cls._listado
