@@ -14,3 +14,6 @@ class Anfibio(Animal):
     @classmethod
     def getListado(cls):
         return cls._listado
+    
+    def movimiento(self):
+        return "saltar"
