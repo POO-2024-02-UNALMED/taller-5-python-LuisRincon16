@@ -16,9 +16,40 @@ class Animal:
         self._genero = gen
         Animal._totalAnimales += 1
 
+    @classmethod
+    def setZona(cls, zona):
+        cls._zona = zona
+
+    @classmethod
+    def getZona(cls):
+        return cls._zona
+
+    def setNombre(self, nom):
+        self._nombre = nom
+    def getNombre(self):
+        return self._nombre
+    
+    def setEdad(self, edad):
+        self._edad = edad
+    def getEdad(self):
+        return self._edad
+    
+    def setHabitat(self, hab):
+        self._habitat = hab 
+    def getHabitat(self):
+        return self._habitat
+
+    def setGenero(self, gen):
+        self._genero = gen
+    def getGenero(self):
+        return self._genero
+
     def totalPorTipo(self):
         return (f"Mamiferos: {len(Mamifero.getListado())}\n" f"Aves: {len(Ave.getListado())}\n" f"Reptiles: {len(Reptil.getListado())}\n" f"Peces: {len(Pez.getListado())}\n" f"Anfibios: {len(Anfibio.getListado())}")
     
     def toString(self):
-        if 
+        if self.getZona is None:
+            return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}"
+        else:
+            return f"Mi nombre es {self.getNombre()}, tengo una edad de {self.getEdad()}, habito en {self.getHabitat()} y mi genero es {self.getGenero()}, la zona en la que me ubico es {self.getZona()}, en el {self.getZona().getZoo()}"
         
