@@ -22,7 +22,7 @@ class Zoologico:
         cls._zonas = newZona
         
     @classmethod
-    def getZonas(cls):
+    def getZona(cls):
         return cls._zonas
 
     @classmethod
@@ -32,6 +32,6 @@ class Zoologico:
     @classmethod
     def cantidadTotalAnimales(cls):
         totalAnimales = 0
-        for zona in cls._zonas:
+        for zona in Zoologico._zonas:
             totalAnimales += zona.cantidadAnimales()
         return totalAnimales

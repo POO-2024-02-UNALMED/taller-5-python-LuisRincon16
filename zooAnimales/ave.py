@@ -34,7 +34,7 @@ class Ave(Animal):
     @classmethod
     def crearAguila(cls, nom, edad, hab= "montanas", gen= None, cPlumas= "blanco y amarillo"):
         Ave(nom, edad, hab, gen, cPlumas)
-        Ave.halcones += 1
+        Ave.aguilas += 1
 
     @classmethod
     def cantidadAves(cls):
