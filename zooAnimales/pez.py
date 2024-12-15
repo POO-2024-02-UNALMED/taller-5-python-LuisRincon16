@@ -12,8 +12,22 @@ class Pez(Animal):
         Pez._listado.append(self)
 
     @classmethod
+    def setListado(cls, list):
+        Pez._listado = list
+
+    @classmethod
     def getListado(cls):
-        return cls._listado
+        return Pez._listado
+    
+    def setColorEscamas(self, cEscamas):
+        self._colorEscamas = cEscamas
+    def getColorEscamas(self):
+        return self._colorEscamas
+    
+    def setCantidadAletas(self, cAletas):
+        self._cantidadAletas = cAletas
+    def getCantidadAletas(self):
+        return self._cantidadAletas
     
     def movimiento(self):
         return "nadar"

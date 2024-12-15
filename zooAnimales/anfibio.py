@@ -12,8 +12,22 @@ class Anfibio(Animal):
         Anfibio._listado.append(self)
 
     @classmethod
+    def setListado(cls, list):
+        Anfibio._listado = list
+
+    @classmethod
     def getListado(cls):
-        return cls._listado
+        return Anfibio._listado
+    
+    def setColorPiel(self, cPiel):
+        self._colorPiel = cPiel
+    def getColorPiel(self):
+        return self._colorPiel
+    
+    def setVenenoso(self, ven):
+        self._venenoso = ven
+    def getVenenoso(self):
+        return self._venenoso
     
     def movimiento(self):
         return "saltar"

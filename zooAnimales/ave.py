@@ -11,9 +11,18 @@ class Ave(Animal):
         Ave._listado.append(self)
 
     @classmethod
+    def setListado(cls, list):
+        Ave._listado = list
+
+    @classmethod
     def getListado(cls):
-        return cls._listado
+        return Ave._listado
     
+    def setColorPlumas(self, cPlumas):
+        self._colorPlumas = cPlumas
+    def getColorPlumas(self):
+        return self._colorPlumas
+
     def movimiento(self):
         return "volar"
     
