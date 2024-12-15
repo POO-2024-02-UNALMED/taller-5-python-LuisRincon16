@@ -17,3 +17,17 @@ class Reptil(Animal):
     
     def movimiento(self):
         return "reptar"
+
+    @classmethod
+    def crearIguana(cls, nom, edad, hab= "humedal", gen= None, cEscamas= "verde", lCola= 3):
+        Reptil(nom, edad, hab, gen, cEscamas, lCola)
+        Reptil.iguanas += 1
+
+    @classmethod
+    def crearSerpiente(cls, nom, edad, hab= "jungla", gen= None, cEscamas= "blanco", lCola= 1):
+        Reptil(nom, edad, hab, gen, cEscamas, lCola)
+        Reptil.serpientes += 1
+
+    @classmethod
+    def cantidadReptiles(cls):
+        return len(Reptil._listado)

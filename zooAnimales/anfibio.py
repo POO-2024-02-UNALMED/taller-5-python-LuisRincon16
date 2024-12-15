@@ -17,3 +17,17 @@ class Anfibio(Animal):
     
     def movimiento(self):
         return "saltar"
+    
+    @classmethod
+    def crearRana(cls, nom, edad, hab= "selva", gen= None, cPiel= "rojo", ven= True):
+        Anfibio(nom, edad, hab, gen, cPiel, ven)
+        Anfibio.ranas += 1
+
+    @classmethod
+    def crearSalamandra(cls, nom, edad, hab= "selva", gen= None, cPiel= "negro y amarillo", ven= False):
+        Anfibio(nom, edad, hab, gen, cPiel, ven)
+        Anfibio.salamandras += 1
+
+    @classmethod
+    def cantidadAnfibios(cls):
+        return len(Anfibio._listado)
