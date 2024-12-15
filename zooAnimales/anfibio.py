@@ -26,7 +26,7 @@ class Anfibio(Animal):
     
     def setVenenoso(self, ven):
         self._venenoso = ven
-    def getVenenoso(self):
+    def isVenenoso(self):
         return self._venenoso
     
     def movimiento(self):
